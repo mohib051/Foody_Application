@@ -10,9 +10,9 @@ const Navbar = () => {
         <img src={assets.logo} alt="" className='logo' />
         <ul className='navbar-menu'>
            <Link to="/"> <li onClick={()=>{setmenu("home")}} className={menu === "home"?"active":"" }>HOME</li></Link>
-            <li onClick={()=>{setmenu("menu")}} className={menu === "menu"?"active":""}>MENU</li>
-            <li onClick={()=>{setmenu("mobile-app")}} className={menu === "mobile-app"?"active":""}>MOBILE-APP</li>
-            <li onClick={()=>{setmenu("contact-us")}} className={menu === "contact-us"?"active":""}>CONTACT US </li>
+            <a href='#explore-menu' onClick={()=>{setmenu("menu")}} className={menu === "menu"?"active":""}>MENU</a>
+            <a href='#app-download' onClick={()=>{setmenu("mobile-app")}} className={menu === "mobile-app"?"active":""}>MOBILE-APP</a>
+            <a href='#footer' onClick={()=>{setmenu("contact-us")}} className={menu === "contact-us"?"active":""}>CONTACT US </a>
         </ul>
         <div className="navbar-right">
             <img src={assets.search_icon} alt="" />
